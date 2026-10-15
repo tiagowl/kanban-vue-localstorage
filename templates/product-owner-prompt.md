@@ -45,7 +45,29 @@ Como Product Owner, preciso que você:
 ### Para Análise de Requisitos
 ```
 Analise os seguintes requisitos e crie user stories detalhadas:
-[Inserir requisitos aqui]
+sistema web de gerenciamento de tarefas com visão kanban e lista;
+
+crud de projetos com nome e descrição (opcional);
+
+crud de etapas ligadas a um projeto;
+
+crud de tarefas ligadas a uma etapa;
+
+crud de subtarefas ligadas a uma tarefa, podendo marcar subtarefa como feito;
+
+crud de etiquetas ligadas a um projeto, podendo vincular varias etiquetas a varias tarefas ligadas a um projeto;
+
+pagina para visualizar todas as tarefas de todos os projetos, podendo filtrar por nome;
+
+pagina para visualizar todas as subtarefas de todas as tarefas de todos os projetos, quando clicado em uma, ir para a visualização da tarefa na pagina do respectivo projeto;
+
+quando clicado em uma tarefa na pagina de todas as tarefas de todos os projetos, ir para a visualização da tarefa na pagina do respectivo projeto;
+
+o sistema sera feito com vue 3, pinia e tailwind;
+
+para persistencia de dados usar localstorage;
+
+os layouts do sistema devem ser bonitos, elegantes e profissionais, com boas praticas de ux e ui design;
 
 Foque em:
 - Identificar personas

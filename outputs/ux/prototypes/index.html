@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Kanban Local — Protótipo UX</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#/"><span class="brand-mark" aria-hidden="true">K</span>Kanban Local<span class="proto-badge">protótipo UX</span></a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="#/" data-nav="home">Projetos</a>
+      <a href="#/tarefas" data-nav="tasks">Todas as Tarefas</a>
+      <a href="#/subtarefas" data-nav="subs">Todas as Subtarefas</a>
+    </nav>
+    <div class="topbar-right">
+      <span id="save-status" class="save-status" aria-live="polite">salvo localmente</span>
+      <button class="icon-btn" data-act="reset-demo" title="Reiniciar dados de demonstração" aria-label="Reiniciar dados de demonstração">↻</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section id="view-home" class="view" hidden></section>
+  <section id="view-project" class="view" hidden></section>
+  <section id="view-tasks" class="view" hidden></section>
+  <section id="view-subs" class="view" hidden></section>
+</main>
+
+<nav class="bottom-nav" aria-label="Navegação principal (mobile)">
+  <a href="#/" data-nav="home"><span class="bico" aria-hidden="true">⌂</span>Projetos</a>
+  <a href="#/tarefas" data-nav="tasks"><span class="bico" aria-hidden="true">☰</span>Tarefas</a>
+  <a href="#/subtarefas" data-nav="subs"><span class="bico" aria-hidden="true">✓</span>Subtarefas</a>
+</nav>
+
+<div id="drawer-backdrop" class="drawer-backdrop" hidden></div>
+<aside id="drawer" class="drawer" role="dialog" aria-modal="true" aria-label="Detalhe da tarefa" hidden></aside>
+
+<div id="modal-root" class="modal-backdrop" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"></div>
+</div>
+
+<div id="toasts" class="toasts" aria-live="polite"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
